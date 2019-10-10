@@ -22,7 +22,7 @@ class ErrorCode{
 	public static $ParseXmlError = 600800101;
 	public static $ComputeSignatureError = 600800102;
 	public static $IllegalAesKey = 600800103;
-	public static $ValidateAppidError = 600800104;
+	public static $ValidateclientIDError = 600800104;
 	public static $EncryptAESError = 600800105;
 	public static $DecryptAESError = 600800106;
 	public static $IllegalBuffer = 600800107;
