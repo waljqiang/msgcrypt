@@ -1,0 +1,21 @@
+{
+    "name": "waljqiang/msgcrypt",
+    "description": "msg crypt",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "waljqiang",
+            "email": "zql185@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4":{
+            "Waljqiang\\MsgCrypt\\": "src/"
+        }
+    }
+}
