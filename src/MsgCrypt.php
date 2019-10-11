@@ -32,7 +32,7 @@ class MsgCrypt{
 	 * @param $nonce string 随机串，可以自己生成，也可以用URL参数的nonce
 	 *
 	 */
-	public function encryptMsg($msg, $timeStamp, $nonce){
+	public function encryptMsg($msg, $nonce,$timeStamp=null){
 		$pc = new Prpcrypt($this->encodingKey);
 
 		//加密
