@@ -10,7 +10,7 @@ $clientID = "ycywqrexgprjkdovkpznblamywql";
 //加密
 $pc = new MsgCrypt($token,$encodingKey,$clientID);
 $msg = json_encode(['a' => 1,'b' =>2]);
-$rs = $pc->encryptMsg($msg,$timeStamp,$nonce);
+$rs = $pc->encryptMsg($msg,$nonce,$timeStamp);
 if($rs['code'] == 10000){
 	$encryptMsg = $rs['data'];
 	var_dump("加密后消息：" . $encryptMsg);
