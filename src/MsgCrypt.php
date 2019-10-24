@@ -48,7 +48,7 @@ class MsgCrypt{
 		$encrypt = $array[1];
 
 		//生成安全签名
-		$sha1 = new SHA1;
+		$sha1 = new Sha1;
 		$array = $sha1->getSHA1($this->token, $timeStamp, $nonce, $encrypt);
 		$ret = $array[0];
 		if ($ret != ErrorCode::$OK) {
@@ -95,7 +95,7 @@ class MsgCrypt{
 		$encrypt = $msg->encrypt;
 
 		//验证安全签名
-		$sha1 = new SHA1;
+		$sha1 = new Sha1;
 		$array = $sha1->getSHA1($this->token, $timestamp, $nonce, $encrypt);
 		$ret = $array[0];
 
